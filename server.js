@@ -1,5 +1,6 @@
 const server = require('fastify')();
 const HOST = process.env.HOST || '127.0.0.1';
+/* istanbul ignore next */
 const PORT = process.env.PORT || 8000;
 const Recipe = require('./recipe.js');
 
