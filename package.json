@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Fake Tests\" && exit 10"
+    "test": "nyc tape ./test/**/*.js",
+    "tester": "echo \"Tester script just ran\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "homepage": "https://github.com/asanteao/distnode-deploy#readme",
   "dependencies": {
     "fastify": "3.2"
+  },
+  "devDependencies": {
+    "node-fetch": "2.6",
+    "nyc": "^15.1.0",
+    "tape": "^5.6.1"
   }
 }
